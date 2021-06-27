@@ -10,8 +10,7 @@ int main() {
 	cout << "Ввод данных: ";
 	cin >> symb;
 
-	while (symb != '-' && symb != '+' && symb != '=' && symb != '*')
-	{
+	while(isdigit(symb) || isalpha(symb))	{
 		cout << "Ошибка, повторите ввод еще раз:  ";
 		cin >> symb;
 	}
